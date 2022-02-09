@@ -17,11 +17,16 @@ public class EmployeeController {
 		Session session=sessionFactory.openSession();
 		
 		Transaction transaction=session.beginTransaction();
-		//All operations goes inside
-//		Employee emp=new Employee(102, "Aman", 10000d, 9891062743l, "amantiwari8861@gmail.com", 22, "Delhi");
-//		session.save(emp);
-//		Employee emp1=new Employee(105, "kamal", 10200d, 98121062743l, "kamalsingh8861@gmail.com", 12, "london");
-//		session.delete(emp1);	
+//		All operations goes inside
+		//id is primary key so truncate the table first
+		Employee emp=new Employee(107, "Aman", 10000d, 9891062743l, "amantiwari8861@gmail.com", 22, "Delhi");
+		session.save(emp);
+		Employee emp2=new Employee(108, "Aman", 10000d, 9891062743l, "amantiwari8861@gmail.com", 22, "Delhi");
+		session.save(emp2);
+		Employee emp1=new Employee(110, "kamal", 10200d, 98121062743l, "kamalsingh8861@gmail.com", 12, "london");
+		session.save(emp1);
+		Employee employee = session.get(Employee.class, 108);
+		session.delete(employee);	
 		
 		transaction.commit();
 		session.close();

@@ -1,0 +1,41 @@
+package com.pack.Hibernate.Imp;
+
+import java.util.List;
+
+import com.pack.Hibernate.DAO.EmployeeDAO;
+import com.pack.entity.Employee;
+
+public class hibernateIMP implements EmployeeDAO {
+
+	@Override
+	public Employee saveEmployee(Employee employee) {
+		
+		return null;
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmployeebyID(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

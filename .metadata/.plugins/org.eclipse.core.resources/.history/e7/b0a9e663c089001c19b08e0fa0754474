@@ -1,0 +1,13 @@
+package com.pack.entity;
+
+import com.pack.Hibernate.Imp.hibernateIMP;
+
+public class EmployeeController {
+
+	public static void main(String[] args) {
+		hibernateIMP obj=new hibernateIMP();
+		obj.saveEmployee(new Employee(105, "kamal", 10200d, 98121062743l, "kamalsingh8861@gmail.com", 12, "london"));
+
+	}
+
+}
